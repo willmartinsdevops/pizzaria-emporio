@@ -176,11 +176,8 @@ a{
 .round-xxlarge{
     border-radius:32px
 }
-.row-padding,.row-padding>,.row-padding>.row-padding>.row-padding>.row-padding>,.row-padding>.col{
-    padding:0 8px
-}
 .container,.panel{
-    padding:0.01em 16px
+    padding:0.01em 8px
 }
 .small{
     font-size:12px!important
