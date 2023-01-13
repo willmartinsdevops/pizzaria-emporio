@@ -7,61 +7,55 @@
 <link rel="stylesheet" href="CSS/style.CSS.CSS">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
-body, html {height: 100%}
+body, html {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
-.menu {display: none}
+.menu {display: flex}
 .bgimg {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("logopizza.jpg");
-  min-height: 90%;
-}
-[type=checkbox],[type=radio]{padding:0}
-[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
-[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
-[type=search]::-webkit-search-decoration{-webkit-appearance:none}
-::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+  min-height: 90%;}
 </style>
 </head>
 <body>
-
 <!-- menu topo -->
 <div class="top hide-small">
-  <div class="bar xlarge black opacity hover-opacity-off" id="myNavbar">
+  <div class="bar xlarge black" id="myNavbar">
     <a href="#"class="bar-item button">HOME</a>
     <a href="#menu" class="bar-item button">CARDÁPIO</a>
     <a href="#about" class="bar-item button">SOBRE</a>
     <a href="#myMap" class="bar-item button">CONTATO</a>
   </div>
 </div>
-  
-<!-- cabeçalho com imagem -->
+  <!-- cabeçalho com imagem -->
 <header class="bgimg display-container" id="home">
   <div class="display-bottomleft padding">
     <span class="tag xlarge">SEJA BEM VINDO!</span>
   </div>
   <div class="display-middle center">
-    <span class="text-white hide-small" style="font-size:100px">EMPÓRIO PIZZAS</span>
-    <span class="text-white hide-large hide-medium" style="font-size:60px"><b>SOMOS</b><br><b>EMPÓRIO PIZZAS</b></span>
+    <span class="text-white hide-large hide-medium" style="font-size:60px"><b>SOMOS</b><br>A<br><b>EMPÓRIO PIZZAS</b></span>
     <p><a href="#menu" class="button xxlarge black">VAMOS PARA O CARDÁPIO!?</a></p>
   </div>
 </header>
 <div class="center black">
-  <img src="emporio.jpg" style="width: 400px; height: 400px; margin-right: auto; margin-left: auto;"/>
+  <img src="emporio.jpg" style="width: 250px; height: 250px; margin-right: auto; margin-left: auto;"/>
 </div>
 <!-- Menu Container -->
-<div class="container black padding-64 xxlarge responsive" id="menu">
+<div class="container black padding-64 xxlarge" id="menu">
   <div class="content">
     <h1 class="center jumbo" style="margin-bottom:64px">CARDÁPIO</h1>
       <div class="row center border border-dark-grey">
         <a href="cardapios/index1.html">
-        <div class="col s4 tablink padding-large hover-red">Pizzas</div>
+        <div class="col s2 padding-large hover-orange">Pizzas</div>
       </a>
       <a href="cardapios/index2.html">
-        <div class="col s4 tablink padding-large hover-red">Combos</div>
-      </a>
-      <a href="cardapios/index6.html">
-        <div class="col s4 tablink padding-large hover-red">Burguers</div>
+        <div class="col s2 padding-large hover-orange">Combos</div>
       </a>
     </div>
   </div>
@@ -69,39 +63,50 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   <div class="content">
      <h1 class="center jumbo" style="margin-bottom:64px"></h1>
       <div class="row center border border-dark-grey">
+        <a href="cardapios/index6.html">
+          <div class="col s2 padding-large hover-orange">Burguers</div>
+        </a>
       <a href="cardapios/index3.html">
-        <div class="col s4 tablink padding-large hover-red">Esfihas</div>
+        <div class="col s2 padding-large hover-orange">Esfihas</div>
       </a>
-      <a href="cardapios/index4.html">
-        <div class="col s4 tablink padding-large hover-red">Pastéis</div>
-      </a>
-      <a href="cardapios/index5.html">
-        <div class="col s4 tablink padding-large hover-red">Hot dogs</div>
-      </a>
+    </div>
   </div>
-</div>
 <div class="container black padding-64 xxlarge" id="menu">
   <div class="content">
     <h1 class="center jumbo" style="margin-bottom:64px"></h1>
       <div class="row center border border-dark-grey">
-        <a href="cardapios/index7.html">
-        <div class="col s4 tablink padding-large hover-red">Calzones</div>
-      </a>
-      <a href="cardapios/index8.html">
-        <div class="col s4 tablink padding-large hover-red">Porções</div>
-      </a>
-      <a href="cardapios/index9.html">
-        <div class="col s4 tablink padding-large hover-red">Bebidas</div>
-      </a>
+        <a href="cardapios/index4.html">
+          <div class="col s2 padding-large hover-orange">Pastéis</div>
+        </a>
+        <a href="cardapios/index5.html">
+          <div class="col s2 padding-large hover-orange">Hot dogs</div>
+        </a>
+      </div>
+  </div>
+  <div class="container black padding-64 xxlarge" id="menu">
+    <div class="content">
+      <h1 class="center jumbo" style="margin-bottom:64px"></h1>
+        <div class="row center border border-dark-grey">
+          <a href="cardapios/index7.html">
+            <div class="col s2 padding-large hover-orange">Calzones</div>
+          </a>
+          <a href="cardapios/index8.html">
+            <div class="col s2 padding-large hover-orange">Porções</div>
+          </a>
+        </div>
     </div>
-  </div>
-  <br>
-  <div class="center">
-    <img src="burguer.png" style="width: 400px; height: 400px; margin-right: auto; margin-left: auto;"/>
-  </div>
+    <div class="container black padding-64 xxlarge" id="menu">
+      <div class="content">
+        <h1 class="center jumbo" style="margin-bottom:64px"></h1>
+          <div class="row center border border-dark-grey">
+            <a href="cardapios/index9.html">
+              <div class="col s3 padding-large hover-orange">Bebidas</div>
+            </a>
+      </div>
+    </div>
 <br>
 <!-- sobre -->
-<div class="container padding-64 red xlarge" id="about">
+<div class="container padding-64 orange xlarge" id="about">
   <div class="content">
     <h1 class="center jumbo" style="margin-bottom:64px">Sobre</h1>
     <div>
@@ -115,12 +120,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     
     <h1 class="center">HORÁRIO DE FUNCIONAMENTO</h1>
     <div class="row center">
-      <div class="col s6">
+      <div class="col s2">
         <p>DOMINGO FECHADO</p>
         <p>SEGUNDA 18:00 - 00:00</p>
         <p>TERÇA 18:00 - 00:00</p>
       </div>
-      <div class="col s6">
+      <div class="col s2">
         <p>QUARTA 18:00 - 00:00</p>
         <p>QUINTA 18:00 - 00:00</p>
         <p>SEXTA 18:00 - 00:00</p>
